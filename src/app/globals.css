@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 :root {
   --background: #ffffff;
@@ -22,5 +24,17 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  tab-size: 2;         
+  -moz-tab-size: 2;
+}
+
+#container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    tab-size: 2;         
+    -moz-tab-size: 2;
+}
+#container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
